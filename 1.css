@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: #FAE3B6;
+    
 }
 .container {
     width: 1320px;
@@ -20,7 +20,12 @@ button {
 }
 
 /* ==================Navigation Bar================== */
-
+nav{
+    background-color: #FAE3B6;;
+}
+.banner_part {
+    background-color: #FAE3B6;;
+}
 
 nav .container {
     justify-content: space-between;
@@ -78,7 +83,8 @@ nav .container .button button:last-child:hover {
 
 
 section .container {
-    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 section .container .left{
     width: 50%;
@@ -116,3 +122,156 @@ section .container .left button:hover{
 section .container .right{
     width: 50%;
 }
+                                      /* Collection part start */
+
+.Collection .container {
+    display: block
+}                                    
+.Collection{
+    padding-top: 100px;
+    padding-bottom : 100px;
+}
+.Collection .box{
+    display: flex;
+    justify-content: space-between;
+}
+.Collection h2{
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 108px;
+}
+
+.Collection .card {
+    width: 349px;
+    height: 402px;
+    /* background: red; */
+    border-radius: 20px;
+    position: relative;
+       overflow: hidden;
+}
+.Collection .container .box .card:nth-child(2) {
+    height: 402px;
+    width: 355px;
+}
+.Collection .container .box .card:nth-child(3) {
+    height: 402px;
+    width: 396px;
+}
+.Collection .card img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+
+.Collection .card .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: 0.6s;
+}
+.Collection .box .card:hover .overlay{
+    width: 100%;
+    top: 0;
+}
+
+.Collection .overlay a{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    background-color: white;
+    padding: 7px 70px;
+    border-radius: 20px;
+}
+                                   
+                                     
+                                      /* Collection part end */
+
+           /* -------------------------------------- Fashion Part  ---------------------------------------------- */
+.fashion .box{
+    display: flex;
+    align-items: center; 
+    
+}
+
+.fashion .box .left{
+    width: 70%;
+    margin-top: 40px;
+   
+}
+.fashion .box .right h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #000000;
+    padding-bottom: 63px;
+    padding-left: 35px;
+}
+.fashion .box .right p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    width: 443px;
+    height: 186px;
+    padding-left: 35px;
+}
+.jeb{
+width: 793px;
+height: 280px;
+background-color: #FEECC8;
+position: absolute;
+bottom: -213px;
+right: 18px;
+z-index: -1;
+border-radius: 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.fashion .container{
+    position: relative;
+}
+.fashion .jeb h3{
+    font-family: 'Podkova', serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #000000;
+}
+.fashion .jeb p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+.box2::after{
+  height: 200px;
+  width: 2px;
+  background-color: #585757;
+  position: absolute;
+  top: 40px;
+  left: 237px;
+  content: "";
+}
+.box2::before{
+  height: 200px;
+  width: 2px;
+  background-color: #585757;
+  position: absolute;
+  top: 40px;
+  left: 516px;
+  content: "";
+}
+
+
+            /* -------------------------------------- Fashion Part end ---------------------------------------------- */
