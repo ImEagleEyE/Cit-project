@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* =============================
+          Common Css
+============================== */
+.container{
+    width: 1250px;
+    margin: 0 auto;
+     
+}
+.box{
+    display: flex;
+    
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+/* =============================
+          Common Css
+============================== */
+/* =============================
+          Navber Css
+============================== */
+nav{
+    background: #FAE3B6;
+     padding: 47px 0px;
+   
+    
+}
+nav .box{
+    justify-content: space-between;
+    align-items: center;
+}
+nav .menu_part ul{
+    display: flex;
+    column-gap: 59px;
+    
+}
+nav .menu_part ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    
+}
+nav .button_part a{
+    background: #FDBB57;
+    padding: 10px 28px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #050505;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    transition: .4s;
+
+}
+nav .button_part a:last-child{
+    margin-left: 5px;
+}
+nav .button_part a:hover{
+    background: transparent;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+/* =============================
+          Navber Css
+============================== */
+/* =============================
+          Banner Css
+============================== */
+.banner{
+    background: #FAE3B6;
+    padding: 124px 0px;
+    
+}
+
+.banner .left_part{
+    width: 50%;
+   
+}
+.banner .left_part h1{
+    font-size: 64px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    width: 536px;
+
+}
+.banner .left_part p{
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    width: 531px;
+    padding-top: 38px;
+    padding-bottom: 76px;
+
+}
+.banner .left_part a{
+    background: #000;
+    padding: 25px 91px;
+     font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+.banner .left_part a:hover{
+    background: transparent;
+    border-color: black;
+    color: black;
+
+}
+.banner .right_part{
+    width: 50%;
+    
+}
+
+/* =============================
+          Banner Css
+============================== */
+
+
+
