@@ -3,9 +3,8 @@
     margin: 0;
     
 }
-.container {
+.container_main {
     width: 1320px;
-    display: flex;
     margin: auto;
 }
 a {
@@ -19,20 +18,39 @@ button {
     cursor: pointer;
 }
 
+/* 
+
+font family ----- 
+font-family: "Dancing Script", cursive;
+font-family: "Pacifico", cursive;
+font-family: "Indie Flower", cursive; 
+font-family: "Caveat", cursive;
+font-family: "Frank Ruhl Libre", sans-serif;
+font-family: "Poppins", sans-serif;
+
+
+*/
+
+
 /* ==================Navigation Bar================== */
+
 nav{
-    background-color: #FAE3B6;;
+    background-color: #FAE3B6;
 }
 .banner_part {
-    background-color: #FAE3B6;;
+    background-color: #FAE3B6;
 }
 
-nav .container {
+nav .container_main {
     justify-content: space-between;
     align-items: center;
+    display: flex;
+}
+nav .container_main .menu{
+    display: none;
 }
 
-nav .container ul {
+nav .container_main ul {
     display: flex;
     width: 647px;
     justify-content: space-between;
@@ -40,14 +58,14 @@ nav .container ul {
     margin-left: 80px;
 }
 
-nav .container ul li a {
+nav .container_main ul li a {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 24px;
     color: #000000;
 }
 
-nav .container .button button:first-child {
+nav .container_main .button button:first-child {
     padding: 10px 27px;
     font-size: 24px;
     font-weight: 600;
@@ -59,12 +77,12 @@ nav .container .button button:first-child {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: .4s;
 }
-nav .container .button button:first-child:hover {
+nav .container_main .button button:first-child:hover {
     border-color: transparent;
     background-color: #FDBB57;
     box-shadow: 0px 4px 4px black;
 }
-nav .container .button button:last-child {
+nav .container_main .button button:last-child {
     padding: 10px 15px;
     font-size: 24px;
     font-weight: 600;
@@ -75,28 +93,31 @@ nav .container .button button:last-child {
     margin-left: 10px;
     transition: .4s;
 }
-nav .container .button button:last-child:hover {
+nav .container_main .button button:last-child:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #FAE3B6;
 }
 /* ==================Navigation Bar================== */
 
-
-section .container {
+.banner_part {
+    margin-top: -1px;
+}
+.banner_part .container_main {
     padding-top: 80px;
     padding-bottom: 50px;
+    display: flex;
 }
-section .container .left{
+section .container_main .left{
     width: 50%;
 }
-section .container .left h1{
+section .container_main .left h1{
     width: 500px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 64px;
     color: #000000;
 }
-section .container .left p{
+section .container_main .left p{
     width: 531px;
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
@@ -104,7 +125,7 @@ section .container .left p{
     color: #000000;
     margin: 38px 0px 76px 0px;
 }
-section .container .left button{
+section .container_main .left button{
     padding: 25px 91px;
     background-color: black;
     color: white;
@@ -115,18 +136,15 @@ section .container .left button{
     transition: .4s;
     border: 2px solid transparent;
 }
-section .container .left button:hover{
+section .container_main .left button:hover{
     color: red;
     border: 2px solid red;
 }
-section .container .right{
+section .container_main .right{
     width: 50%;
 }
                                       /* Collection part start */
-
-.Collection .container {
-    display: block
-}                                    
+                                 
 .Collection{
     padding-top: 100px;
     padding-bottom : 100px;
@@ -147,16 +165,15 @@ section .container .right{
 .Collection .card {
     width: 349px;
     height: 402px;
-    /* background: red; */
     border-radius: 20px;
     position: relative;
-       overflow: hidden;
+    overflow: hidden;
 }
-.Collection .container .box .card:nth-child(2) {
+.Collection .container_main .box .card:nth-child(2) {
     height: 402px;
     width: 355px;
 }
-.Collection .container .box .card:nth-child(3) {
+.Collection .container_main .box .card:nth-child(3) {
     height: 402px;
     width: 396px;
 }
@@ -175,7 +192,7 @@ section .container .right{
     left: 0;
     border-radius: 20px;
     opacity: 0.8;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 .Collection .box .card:hover .overlay{
     width: 100%;
@@ -201,11 +218,12 @@ section .container .right{
 
            /* -------------------------------------- Fashion Part  ---------------------------------------------- */
 
-.fashion .container {
+.fashion .container_main {
     position: relative;
+    padding-bottom: 350px;
 }
 
-           .fashion .box{
+.fashion .box{
     display: flex;
     align-items: center; 
     
@@ -233,19 +251,19 @@ section .container .right{
     padding-left: 35px;
 }
 .jeb{
-width: 793px;
+width: 730px;
 height: 280px;
 background-color: #FEECC8;
 position: absolute;
-bottom: -213px;
-right: 18px;
+top: 63%;
+right: 0%;
 z-index: -1;
 border-radius: 20px;
 display: flex;
 justify-content: space-around;
 align-items: center;
 }
-.fashion .container{
+.fashion .container_main{
     position: relative;
 }
 .fashion .jeb h3{
@@ -264,8 +282,8 @@ align-items: center;
   width: 2px;
   background-color: #585757;
   position: absolute;
-  top: 40px;
-  left: 237px;
+  top: 15%;
+  left: 30%;
   content: "";
 }
 .box2::before{
@@ -273,13 +291,15 @@ align-items: center;
   width: 2px;
   background-color: #585757;
   position: absolute;
-  top: 40px;
-  left: 516px;
+  top: 15%;
+  left: 65%;
   content: "";
 }
 .points img{
+    width: 179px !important;
+    height: 163px !important;
     position: absolute;
-    bottom: -40%;
+    bottom: 0;
     left: 17%
 }
             /* ------------------ Fashion Part end -------------------- */
@@ -289,19 +309,22 @@ align-items: center;
 
 /* ===============Product Part================ */
 .product {
-    margin-top: 370px;
     background-color: #CFA485;
     padding-bottom: 191px;
 }
-.product .container .left1{
+.product .container_main {
+    display: flex;
+    padding-top: 56px;
+}
+.product .container_main .left1{
     width: 40%;
 }
-.product .container .right1{
+.product .container_main .right1{
     width: 60%;
     display: flex;
 }
 
-.product .container .left1 h2{
+.product .container_main .left1 h2{
     width: 470px;
     font-weight: 700;
     font-size: 64px;
@@ -309,7 +332,7 @@ align-items: center;
     color: white;
 
 }
-.product .container .left1 p{
+.product .container_main .left1 p{
     width: 420px;
     font-size: 24px;
     font-family: "Frank Ruhl Libre", serif;
@@ -319,7 +342,7 @@ align-items: center;
     padding-bottom: 40px;
 }
 
-.product .container .left1 button{
+.product .container_main .left1 button{
     padding: 25px 91px;
     background-color: black;
     color: white;
@@ -330,60 +353,58 @@ align-items: center;
     transition: .4s;
     border: 2px solid transparent;
 }
-.product .container .left1 button:hover{
+.product .container_main .left1 button:hover{
     color: red;
     border: 2px solid red;
 }
-.product .container .right1 .imgbox1 img{
+.product .container_main .right1 .imgbox1 img{
     width: 366px;
     height: 424px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
 }
-.product .container .right1 .imgbox1{
-    content: "";
+.product .container_main .right1 .imgbox1{
     width: 366px;
     height: 551px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     background-color: white;
 }
-.product .container .right1 .imgbox1 .box1price{
+.product .container_main .right1 .imgbox1 .box1price{
     margin-left: 22.21px;
     margin-top: 14.24px;
 }
-.product .container .right1 .imgbox1 ul{
+
+.product .container_main .right1 .imgbox1 ul{
     color: #FFAF37;
     display: flex;
+    margin-left: -32px;
 }
-.product .container .right1 .imgbox1 h3{
+
+.product .container_main .right1 .imgbox1 h3{
     width: 161.2717742919922px;
-    height: 35.60747528076172px;
     font-weight: 600;
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
     color: black;
 }
-.product .container .right1 .imgbox1 p{
+.product .container_main .right1 .imgbox1 p{
     font-weight: 400;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
     color: #C4C4C4;
     width: 97px;
-    height: 36px;
     display: flex;
 }
-.product .container .right1 .imgbox1 span{
+.product .container_main .right1 .imgbox1 span{
     font-weight: 400;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
     color: #000000;
     width: 85px;
-    height: 43px;
     margin-left: 31px;
 }
-.product .container .right1 .imgbox2{
-    content: "";
+.product .container_main .right1 .imgbox2{
     width: 366px;
     height: 551px;
     border-top-left-radius: 60px;
@@ -391,37 +412,727 @@ align-items: center;
     background-color: white;
     margin-left: 31px;
 }
-.product .container .right1 .imgbox2 span{
+.product .container_main .right1 .imgbox2 img{
+    width: 366px;
+    height: 424px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.product .container_main .right1 .imgbox2 span{
     font-weight: 400;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
     color: #000000;
     width: 85px;
-    height: 43px;
     margin-left: 31px;
 }
-.product .container .right1 .imgbox2 p{
+.product .container_main .right1 .imgbox2 p{
     font-weight: 400;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
     color: #C4C4C4;
     width: 97px;
-    height: 36px;
     display: flex;
 }
-.product .container .right1 .imgbox2 h3{
+.product .container_main .right1 .imgbox2 h3{
     width: 161.2717742919922px;
-    height: 35.60747528076172px;
     font-weight: 600;
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
     color: black;
 }
-.product .container .right1 .imgbox2 ul{
+.product .container_main .right1 .imgbox2 ul{
     color: #FFAF37;
     display: flex;
+    margin-left: -32px;
 }
-.product .container .right1 .imgbox2 .box2price{
+.product .container_main .right1 .imgbox2 .box2price{
     margin-left: 22.21px;
     margin-top: 14.24px;
 }
+
+
+
+/* ==========================    Media    ============================ */
+
+
+@media (min-width: 1400px) {
+    .container_main {
+        width: 98% !important;
+    }
+    img{
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container_main {
+        width: 98% !important;
+    }
+    img{
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container_main {
+        width: 98% !important;
+    }
+    img{
+        width: 100% !important;
+    }
+    nav .container_main ul{
+        width: 100% !important;
+        margin-left: 10px !important;
+        column-gap: 20px !important;
+    }
+    nav .container_main ul li a{
+        font-size: 130% !important;
+        font-weight: 100% !important;
+    }
+    nav .container_main .button button{
+        padding: 6% 20px !important;
+        font-size: 100% !important;
+    }
+    .banner_part .container_main {
+        padding-top: 5% !important;
+    }
+    .banner_part .container_main .left{
+        width: 45% !important;
+        margin-right: 10% !important;
+    }
+    .banner_part .container_main .left h1{
+        width: 100% !important;
+        font-size: 250% !important;
+    }
+    .banner_part .container_main .left p{
+        width: 100% !important;
+        font-size: 100% !important;
+        margin: 20px 0px 40px 0px !important;
+    }
+    .Collection .container_main .box {
+        column-gap: 5% !important;
+    }
+    .Collection .card {
+        height: auto !important;
+    }
+    .Collection .overlay a{
+        top: 80% !important;
+        padding: 2% 20% !important;
+    }
+    .fashion .container_main{
+        padding-bottom: 28% !important;
+    }
+    .fashion .box .right p{
+        font-size: 20px !important;
+    }
+    .fashion .container_main .jeb{
+        width: 63% !important;
+        height: 25% !important;
+        top: 60% !important;
+    }
+    .fashion .container_main .box2::after{
+        height: 70% !important;
+        left: 27% !important;
+    }
+    .fashion .container_main .box2::before{
+        height: 70% !important;
+    }
+    .product .container_main .left1 p{
+        font-size: 15px !important;
+        width: 100% !important;
+    }
+    .product .container_main .right1 .imgbox1{
+        height: 450px !important;
+    }
+    .product .container_main .right1 .imgbox1 img{
+        height: 77% !important;
+    }
+    .product .container_main .right1 .imgbox2{
+        height: 450px !important;
+    }
+    .product .container_main .right1 .imgbox2 img{
+        height: 77% !important;
+    }
+    .product .container_main .right1 .box1price ul {
+        height: 10px;
+    }
+    .product .container_main .right1 .box1price h3{
+        height: 15px;
+    }
+    .product .container_main .right1 .box1price p{
+        font-size: 20px !important;
+    }
+    .product .container_main .right1 .box1price span{
+        font-size: 20px !important;
+    }
+    .product .container_main .right1 .box2price ul {
+        height: 10px;
+    }
+    .product .container_main .right1 .box2price h3{
+        height: 15px;
+    }
+    .product .container_main .right1 .box2price p{
+        font-size: 20px !important;
+    }
+    .product .container_main .right1 .box2price span{
+        font-size: 20px !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container_main {
+        width: 98% !important;
+    }
+    img{
+        width: 100% !important;
+    }
+    nav .container_main ul{
+        width: 100% !important;
+        margin-left: 10px !important;
+        column-gap: 20px !important;
+    }
+    nav .container_main ul li a{
+        font-size: 90% !important;
+        font-weight: 100% !important;
+    }
+    nav .container_main .button button{
+        padding: 6% 20px !important;
+        font-size: 80% !important;
+    }
+    .banner_part .container_main {
+        padding-top: 5% !important;
+    }
+    .banner_part .container_main .left{
+        width: 45% !important;
+        margin-right: 10% !important;
+    }
+    .banner_part .container_main .left h1{
+        width: 100% !important;
+        font-size: 250% !important;
+    }
+    .banner_part .container_main .left p{
+        width: 100% !important;
+        font-size: 100% !important;
+        margin: 20px 0px 40px 0px !important;
+    }
+    .banner_part .container_main .left button {
+        padding: 15px 50px !important;
+        font-size: 80% !important;
+    }
+    .Collection {
+        padding-bottom: 100px !important;
+    }
+    .Collection .card {
+        height: auto !important;
+    }
+    .Collection .container_main .box {
+        column-gap: 5% !important;
+    }
+    .Collection .overlay a{
+        top: 80% !important;
+        padding: 2% 10% !important;
+        overflow: hidden !important;
+    }
+    .fashion .container_main{
+        padding-bottom: 28% !important;
+    }.fashion .box .right h2{
+        font-size: 40px !important;
+    }
+    .fashion .box .right p{
+        font-size: 18px !important;
+        width: 91% !important;
+    }
+    .fashion .container_main .jeb{
+        width: 55% !important;
+        height: 20% !important;
+        top: 64% !important;
+    }
+    .fashion .container_main .jeb h3{
+        font-size: 40px !important;
+    }
+    .fashion .container_main .jeb p{
+        font-size: 20px !important;
+    }
+    .fashion .container_main .box2::after{
+        height: 70% !important;
+        left: 27% !important;
+    }
+    .fashion .container_main .box2::before{
+        height: 70% !important;
+    }
+    .fashion .points img{
+        width: 130px !important;
+        height: 120px !important;
+    }
+    .product .container_main .left1 h2{
+        font-size: 50px !important;
+        width: 100% !important;
+    }
+    .product .container_main .left1 p{
+        font-size: 15px !important;
+        width: 100% !important;
+    }
+    .product .container_main .left1 button{
+        padding: 15px 50px !important;
+        font-size: 80% !important;
+    }
+    .product .container_main .right1 .imgbox1{
+        height: 380px !important;
+    }
+    .product .container_main .right1 .imgbox1 img{
+        height: 77% !important;
+    }
+    .product .container_main .right1 .imgbox2{
+        height: 380px !important;
+    }
+    .product .container_main .right1 .imgbox2 img{
+        height: 77% !important;
+    }
+    .product .container_main .right1 .box1price{
+        margin-top: auto !important;
+        margin-left: 10px !important;
+    }
+    .product .container_main .right1 .box1price ul i{
+        font-size: 12px !important;
+    }
+    .product .container_main .right1 .box1price h3{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box1price p{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box1price span{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price{
+        margin-top: 0 !important;
+        margin-left: 10px !important;
+    }
+    .product .container_main .right1 .box2price ul i{
+        font-size: 12px !important;
+    }
+    .product .container_main .right1 .box2price h3{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price p{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price span{
+        font-size: 15px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    nav{
+        padding-top: 10px;
+    }
+    .container_main {
+        width: 98% !important;
+    }
+    nav .container_main {
+        position: relative;
+    }
+    img{
+        width: 100% !important;
+    }
+    nav .container_main .menu{
+        display: block !important;
+        color: rgb(0, 0, 0);
+        padding: 6px 10px;
+        background-color: #FAE3B6;
+        border-radius: 10px;
+        border: 1px solid #F2D09B;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        top: 0;
+        left: 35%;
+    }
+    nav .container_main .menu h1{
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+    }
+    nav .container_main .menu ul {
+        display: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        line-height: 30px;
+    }
+    nav .container_main .menu ul li a{
+        font-size: 20px;
+    }
+    nav .container_main .menu:hover ul {
+        display: block;
+        width: 100px;
+    }
+    nav .container_main .menubar{
+        display: none !important;
+    }
+    nav .container_main .menubar li a{
+        font-size: 90% !important;
+        font-weight: 100% !important;
+    }
+    nav .container_main .button button{
+        padding: 6% 20px !important;
+        font-size: 80% !important;
+    }
+    .banner_part .container_main {
+        padding-top: 5% !important;
+    }
+    .banner_part .container_main .left{
+        width: 45% !important;
+        margin-right: 10% !important;
+    }
+    .banner_part .container_main .left h1{
+        width: 100% !important;
+        font-size: 30px !important;
+    }
+    .banner_part .container_main .left p{
+        width: 100% !important;
+        font-size: 100% !important;
+        margin: 20px 0px 40px 0px !important;
+    }
+    .banner_part .container_main .left button {
+        padding: 15px 50px !important;
+        font-size: 80% !important;
+    }
+    .Collection {
+        padding-bottom: 100px !important;
+    }
+    .Collection .card {
+        height: auto !important;
+    }
+    .Collection .container_main .box {
+        column-gap: 5% !important;
+    }
+    .Collection .overlay a{
+        top: 80% !important;
+        padding: 2% 10% !important;
+        overflow: hidden !important;
+    }
+    .fashion .container_main{
+        padding-bottom: 28% !important;
+    }
+    .fashion .box .right h2{
+        font-size: 30px !important;
+        padding-bottom: 10px;
+    }
+    .fashion .box .right p{
+        font-size: 15px !important;
+        width: 91% !important;
+    }
+    .fashion .container_main .jeb{
+        width: 55% !important;
+        height: 20% !important;
+        top: 66% !important;
+    }
+    .fashion .container_main .jeb h3{
+        font-size: 30px !important;
+    }
+    .fashion .container_main .jeb p{
+        font-size: 10px !important;
+    }
+    .fashion .container_main .box2::after{
+        height: 70% !important;
+        left: 27% !important;
+    }
+    .fashion .container_main .box2::before{
+        height: 70% !important;
+    }
+    .fashion .points img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .product .container_main {
+        display: block;
+    }
+    .product .container_main .left1{
+        display: flex;
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product .container_main .left1 h2{
+        font-size: 40px !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    .product .container_main .left1 p{
+        font-size: 15px !important;
+        width: 100% !important;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .product .container_main .left1 button{
+        padding: 15px 50px !important;
+        font-size: 80% !important;
+    }
+    .product .container_main .right1{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .product .container_main .right1 .imgbox1{
+        height: 400px !important;
+    }
+    .product .container_main .right1 .imgbox1 img{
+        height: 77% !important;
+    }
+    .product .container_main .right1 .imgbox2{
+        height: 400px !important;
+    }
+    .product .container_main .right1 .imgbox2 img{
+        height: 77% !important;
+    }
+    .product .container_main .right1 .box1price{
+        margin-top: auto !important;
+        margin-left: 10px !important;
+    }
+    .product .container_main .right1 .box1price ul i{
+        font-size: 12px !important;
+    }
+    .product .container_main .right1 .box1price h3{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box1price p{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box1price span{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price{
+        margin-top: 0 !important;
+        margin-left: 10px !important;
+    }
+    .product .container_main .right1 .box2price ul i{
+        font-size: 12px !important;
+    }
+    .product .container_main .right1 .box2price h3{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price p{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price span{
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    nav{
+        padding-top: 10px;
+    }
+    .container_main {
+        width: 98% !important;
+    }
+    nav .container_main {
+        position: relative;
+    }
+    img{
+        width: 100% !important;
+    }
+    nav .container_main .menu{
+        display: block !important;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        top: 120%;
+        left: 60%;
+    }
+    nav .container_main .menu h1{
+        font-weight: bold;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }
+    nav .container_main .menu ul {
+        display: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        line-height: 30px;
+    }
+    nav .container_main .menu ul li a{
+        font-size: 20px;
+    }
+    nav .container_main .menu:hover ul {
+        display: block;
+        width: 110px;
+        padding: 0 5px;
+        background-color: #FAE3B6;
+        border-radius: 10px;
+        border: 1px solid #F2D09B;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    nav .container_main .menubar{
+        display: none !important;
+    }
+    nav .container_main .menubar li a{
+        font-size: 90% !important;
+        font-weight: 100% !important;
+    }
+    nav .container_main .button button{
+        padding: 6% 20px !important;
+        font-size: 10px !important;
+    }
+    .banner_part .container_main {
+        padding-top: 10% !important;
+    }
+    .banner_part .container_main .left{
+        width: 45% !important;
+        margin-right: 10% !important;
+    }
+    .banner_part .container_main .left h1{
+        width: 100% !important;
+        font-size: 20px !important;
+        text-align: center;
+    }
+    .banner_part .container_main .left p{
+        width: 100% !important;
+        font-size: 10px !important;
+        margin: 20px 0px 40px 0px !important;
+        text-align: center;
+    }
+    .banner_part .container_main .left button {
+        padding: 10px 30px !important;
+        font-size: 10px !important;
+    }
+    .Collection {
+        padding-bottom: 100px !important;
+    }
+    .Collection .container_main .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Collection .card {
+        width: 80% !important;
+        height: auto !important;
+        margin-bottom: 20px !important;
+    }
+    .Collection .container_main .box {
+        column-gap: 5% !important;
+    }
+    .Collection .overlay a{
+        top: 80% !important;
+        padding: 2% 10% !important;
+        overflow: hidden !important;
+    }
+    .fashion .container_main{
+        padding-bottom: 28% !important;
+    }
+    .fashion .box .right h2{
+        font-size: 15px !important;
+        padding-bottom: 10px;
+    }
+    .fashion .box .right p{
+        font-size: 8px !important;
+        width: 120px !important;
+    }
+    .fashion .container_main .jeb{
+        width: 55% !important;
+        height: 15% !important;
+        top: 66% !important;
+    }
+    .fashion .container_main .jeb h3{
+        margin-top: 10px;
+        font-size: 15px !important;
+    }
+    .fashion .container_main .jeb p{
+        font-size: 8px !important;
+    }
+    .fashion .container_main .box2::after{
+        height: 70% !important;
+        left: 25% !important;
+    }
+    .fashion .container_main .box2::before{
+        height: 70% !important;
+        left: 63%;
+    }
+    .fashion .points img{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .product .container_main {
+        display: block;
+    }
+    .product .container_main .left1{
+        display: flex;
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product .container_main .left1 h2{
+        font-size: 40px !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    .product .container_main .left1 p{
+        font-size: 15px !important;
+        width: 100% !important;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .product .container_main .left1 button{
+        padding: 15px 50px !important;
+        font-size: 80% !important;
+    }
+    .product .container_main .right1{
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 30px;
+    }
+    .product .container_main .right1 .imgbox1{
+        height: 400px !important;
+        width: 80% !important;
+        margin-bottom: 20px;
+    }
+    .product .container_main .right1 .imgbox1 img{
+        height: 77% !important;
+    }
+    .product .container_main .right1 .imgbox2{
+        height: 400px !important;
+        width: 80% !important;
+        margin-left: 0;
+    }
+    .product .container_main .right1 .imgbox2 img{
+        height: 77% !important;
+    }
+    .product .container_main .right1 .box1price{
+        margin-top: auto !important;
+        margin-left: 10px !important;
+    }
+    .product .container_main .right1 .box1price ul i{
+        font-size: 12px !important;
+    }
+    .product .container_main .right1 .box1price h3{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box1price p{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box1price span{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price{
+        margin-top: 0 !important;
+        margin-left: 10px !important;
+    }
+    .product .container_main .right1 .box2price ul i{
+        font-size: 12px !important;
+    }
+    .product .container_main .right1 .box2price h3{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price p{
+        font-size: 15px !important;
+    }
+    .product .container_main .right1 .box2price span{
+        font-size: 15px !important;
+    }
+}
+/* ==========================    Media    ============================ */
