@@ -931,6 +931,10 @@ align-items: center;
     nav .container_main {
         position: relative;
     }
+    nav .container_main .logo_main {
+        width: 80px;
+        height: auto;
+    }
     img{
         width: 100% !important;
     }
@@ -938,8 +942,10 @@ align-items: center;
         display: block !important;
         color: rgb(0, 0, 0);
         position: absolute;
-        top: 120%;
-        left: 60%;
+        top: 18%;
+        left: 28%;
+        border: 2px solid rgb(255, 136, 0);
+        border-radius: 10px;
     }
     nav .container_main .menu h1{
         font-weight: bold;
@@ -972,7 +978,7 @@ align-items: center;
         font-weight: 100% !important;
     }
     nav .container_main .button button{
-        padding: 6% 20px !important;
+        padding: 6% 12px !important;
         font-size: 10px !important;
     }
     .banner_part .container_main {
